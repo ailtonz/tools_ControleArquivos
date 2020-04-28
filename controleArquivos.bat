@@ -17,7 +17,9 @@ rem ### ATENCAO: Necessario o app [ 7za.exe ] do 7zip
 rem
 rem Compactar arquivos em pasta selecionada
 rem
-
+rem #pasta_selecionada -> Indicar o nome da pasta que será compactada
+rem #pasta_selecionada -> Caso deseje que todas as pastas do diretorio sejam conpactadas indicar "." 
+rem 
 for /d %%X in (pasta_selecionada) do 7za.exe a %Year%%Month%%Day%-%hr%%min%_"%%X.7z" "%%X\"
 rem PAUSE
 
